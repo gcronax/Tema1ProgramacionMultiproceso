@@ -6,7 +6,7 @@ public class Ejemplo2ProcessBuilder {
     public static void main(String[] args) {
         try{
             ProcessBuilder processBuilder = new
-                    ProcessBuilder("ping","10.112.4.178");
+                    ProcessBuilder("ls","-l");
             Process process= processBuilder.start();
             BufferedReader reader= new BufferedReader(
                     new BufferedReader(new InputStreamReader(
