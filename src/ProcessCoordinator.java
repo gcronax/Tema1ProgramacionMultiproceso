@@ -6,7 +6,7 @@ public class ProcessCoordinator {
         try {
             System.out.println("ProcessCoordinator PID = " + ProcessHandle.current().pid());
 
-            ProcessBuilder pb = new ProcessBuilder("java", "PingWorker", "8.8.8.8");
+            ProcessBuilder pb = new ProcessBuilder("java", "PingWorker", "0.0.0.0");
             Process worker = pb.start();
 
             BufferedReader reader = new BufferedReader(

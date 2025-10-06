@@ -7,7 +7,7 @@ public class PingWorker {
         if (args.length > 0){
             ip = args[0];
         }else {
-            ip="8.8.8.8";
+            ip="";
         }
 
         System.out.println(ip);
